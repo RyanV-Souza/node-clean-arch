@@ -2,10 +2,14 @@
   "compilerOptions": {
     "outDir": "./dist",
     "module": "commonjs",
-    "target": "ES2019",
+    "target": "ES2021",
     "esModuleInterop": true,
     "allowJs": true,
     "strict": false,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": [
+      "jest"
+    ],
+    "noEmit": true
   }
 }
