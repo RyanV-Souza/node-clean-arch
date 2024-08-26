@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:staged": "jest --passWithNoTests",
     "prepare": "husky"
   },
   "keywords": [],
@@ -30,7 +31,8 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --fix --ext .ts"
+      "eslint --fix --ext .ts",
+      "npm run test:staged"
     ]
   }
 }
