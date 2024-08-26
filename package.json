@@ -11,7 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.5.0",
+    "eslint": "^8.57.0",
     "git-commit-msg-linter": "^5.0.8",
+    "ts-standard": "^12.0.2",
     "typescript": "^5.5.4"
+  },
+  "ts-standard": {
+    "project": "./tsconfig.json"
   }
 }
