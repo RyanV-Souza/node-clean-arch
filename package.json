@@ -16,10 +16,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/validator": "^13.12.1",
     "@rocketseat/eslint-config": "^2.2.2",
+    "@types/bcrypt": "^5.0.2",
     "@types/jest": "^29.5.12",
     "@types/node": "^22.5.0",
+    "@types/validator": "^13.12.1",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "@typescript-eslint/parser": "^8.2.0",
     "eslint": "^8.57.0",
@@ -38,6 +39,7 @@
     ]
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "validator": "^13.12.0"
   }
 }
