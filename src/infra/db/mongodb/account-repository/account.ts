@@ -15,10 +15,6 @@ export class AccountMongoRepository implements AddAccountRepository {
       throw new Error('Account not found')
     }
 
-    const { _id, ...rest } = account
-
-    const formattedAccount = { ...rest, id: _id.toString() } as AccountModel
-
-    return formattedAccount
+    return MongoHelper.map(account)
   }
 }

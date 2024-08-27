@@ -1,4 +1,5 @@
 import { Collection, MongoClient } from 'mongodb'
+import { AccountModel } from '../../../../domain/models/account'
 
 export class MongoHelper {
   private static client: MongoClient | null = null
@@ -15,5 +16,11 @@ export class MongoHelper {
 
   static getCollection(collectionName: string): Collection {
     return this.client!.db().collection(collectionName)
+  }
+
+  static map(collection: any): any {
+    const { _id, ...rest } = collection
+
+    return { ...rest, id: _id.toString() }
   }
 }
