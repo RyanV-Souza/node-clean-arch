@@ -21,6 +21,7 @@ describe('BcryptAdapter', () => {
 
   it('Should return a hash on successful encryption', async () => {
     const sut = makeSut()
+    console.log('oi')
 
     const hash = await sut.encrypt('password')
     expect(hash).toBe('hashed_password')
